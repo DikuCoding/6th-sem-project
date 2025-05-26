@@ -18,7 +18,7 @@ if(isset($message)){
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
+            <a href="https://www.instagram.com/diikuu_k/" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
          <p> new  <a href="login.php">Login</a> | <a href="register.php">Register</a> </p>
@@ -27,7 +27,7 @@ if(isset($message)){
 
    <div class="header-2">
       <div class="flex">
-         <a href="home.php" class="logo">EasyBloom.</a>
+         <a href="home.php" class="logo">EcoBloom</a>
 
          <nav class="navbar">
             <a href="home.php">Home</a>

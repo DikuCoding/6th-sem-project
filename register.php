@@ -45,8 +45,6 @@ if(isset($_POST['submit'])){
 </head>
 <body>
 
-
-
 <?php
 if(isset($message)){
    foreach($message as $message){

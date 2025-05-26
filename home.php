@@ -104,8 +104,6 @@ if(isset($_POST['add_to_cart'])){
                      $password = "";
                      $database = "shop_db";
                      $conn = new mysqli($servername, $username, $password, $database);
-                
-                
                      $sqlQuery = "SELECT user_id, name, image,price, quantity, SUM(quantity) AS total_quantity 
                      FROM cart 
                      GROUP BY name 
@@ -117,16 +115,10 @@ if ($results->num_rows > 0) {
             ?> 
                     <div class="row">
                         <div class="card">
-                      
-
-                                
-                           
                                 <img src="uploaded_img/<?php echo $data['image']; ?>" height="50" width="50">
                                 <div class="name"><?php echo $data['name']; ?></div>
             <div class="price">Rs. <?php echo $data['price']; ?>/-</div>
                             
-                           
-
                         </div>
                     </div>
             <?php }
@@ -135,39 +127,6 @@ if ($results->num_rows > 0) {
 
         <!-- algorithm -->
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <section class="about">
 
@@ -179,7 +138,7 @@ if ($results->num_rows > 0) {
 
       <div class="content">
          <h3>about us</h3>
-         <p>At EasyBloom, we believe in the power of greenery to enhance our lives, homes, and environment. when a group of passionate plant lovers came together to share their love for all things green. What started as a humble collection of houseplants in our living rooms soon blossomed into a thriving online marketplace.</p>
+         <p>At EcoBloom, we believe in the power of greenery to enhance our lives, homes, and environment. when a group of passionate plant lovers came together to share their love for all things green. What started as a humble collection of houseplants in our living rooms soon blossomed into a thriving online marketplace.</p>
          <a href="about.php" class="btn">read more</a>
       </div>
 
@@ -195,10 +154,6 @@ if ($results->num_rows > 0) {
    </div>
 
 </section>
-
-
-
-
 
 <?php include 'footer.php'; ?>
 

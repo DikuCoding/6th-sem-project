@@ -46,7 +46,7 @@ if(!isset($user_id)){
 
       <div class="content">
          <h3>why choose us?</h3>
-         <p>At EasyBloom, we believe in the power of greenery to enhance our lives, homes, and environment. when a group of passionate plant lovers came together to share their love for all things green. What started as a humble collection of houseplants in our living rooms soon blossomed into a thriving online marketplace.</p>
+         <p>At EcoBloom, we believe in the power of greenery to enhance our lives, homes, and environment. when a group of passionate plant lovers came together to share their love for all things green. What started as a humble collection of houseplants in our living rooms soon blossomed into a thriving online marketplace.</p>
          <p>Our mission is simple yet profound: to bring the joy of gardening and the magic of nature to your doorstep. We aim to make the experience of buying and caring for plants as delightful and rewarding as possible. Whether you're a seasoned gardener or just starting your plant journey, EasyBloom is here to guide you every step of the way.</p>
          <a href="contact.php" class="btn">contact us</a>
       </div>
@@ -54,16 +54,6 @@ if(!isset($user_id)){
    </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
 
 <?php include 'footer.php'; ?>
 

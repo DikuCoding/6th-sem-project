@@ -21,7 +21,11 @@ if(isset($message)){
             <a href="https://www.instagram.com/diikuu_k/" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <p> new  <a href="login.php">Login</a> | <a href="register.php">Register</a> </p>
+          <?php if(!isset($_SESSION['user_id'])): ?>
+         <p>New? <a href="login.php">Login</a> | <a href="register.php">Register</a></p>
+         <?php else: ?>
+         <p>Welcome, <?php echo $_SESSION['user_name']; ?>!</p>
+         <?php endif; ?>
       </div>
    </div>
 

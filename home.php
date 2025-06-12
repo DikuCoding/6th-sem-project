@@ -96,8 +96,9 @@ if(isset($_POST['add_to_cart'])){
 
 </section>
 <!-- //algorithm -->
-
-                 <h1 font size>    Recommended Products</h1>
+                  <div class="rec-prod-h1">
+                     <h1 class="title" font size>Recommended Products</h1>
+                  </div>
                 <div class="row">
             <?php  $servername = "localhost";
                      $username = "root";
@@ -109,9 +110,9 @@ if(isset($_POST['add_to_cart'])){
                      GROUP BY name 
                      ORDER BY total_quantity DESC";
 
-$results = $conn->query($sqlQuery);
-if ($results->num_rows > 0) {
-    while ($data = mysqli_fetch_assoc($results)) {
+         $results = $conn->query($sqlQuery);
+         if ($results->num_rows > 0) {
+         while ($data = mysqli_fetch_assoc($results)) {
             ?> 
                     <div class="row">
                         <div class="card">

@@ -43,6 +43,7 @@ if(isset($_POST['add_to_cart'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/search_page.css">
 
 </head>
 <body>
@@ -94,14 +95,6 @@ if(isset($_POST['add_to_cart'])){
   
 
 </section>
-
-
-
-
-
-
-
-
 
 <?php include 'footer.php'; ?>
 

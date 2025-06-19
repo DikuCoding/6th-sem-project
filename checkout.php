@@ -102,8 +102,8 @@ if(isset($_POST['order_btn'])){
             <select name="method" required>
                <option value="">--Select Payment Method--</option>
                <option value="cash on delivery">Cash on Delivery</option>
-               <option value="credit card">Credit Card</option>
-               <option value="khalti">Khalti</option>
+               <!-- <option value="credit card">Credit Card</option> -->
+               <!-- <option value="khalti">Khalti</option> -->
             </select>
          </div>
          <div class="inputBox">

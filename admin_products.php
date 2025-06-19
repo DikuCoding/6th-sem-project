@@ -1,5 +1,4 @@
 <?php
-
 include 'config.php';
 
 session_start();
@@ -9,7 +8,6 @@ $admin_id = $_SESSION['admin_id'];
 if(!isset($admin_id)){
    header('location:login.php');
 };
-
 if(isset($_POST['add_product'])){
 
    $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -47,7 +45,6 @@ if(isset($_GET['delete'])){
    mysqli_query($conn, "DELETE FROM `products` WHERE id = '$delete_id'") or die('query failed');
    header('location:admin_products.php');
 }
-
 if(isset($_POST['update_product'])){
 
    $update_p_id = $_POST['update_p_id'];
@@ -71,11 +68,8 @@ if(isset($_POST['update_product'])){
          unlink('uploaded_img/'.$update_old_image);
       }
    }
-
    header('location:admin_products.php');
-
 }
-
 ?>
 
 <!DOCTYPE html>

@@ -27,7 +27,6 @@ if(isset($_POST['send'])){
    }
 
 }
-
 ?>
 
 <!DOCTYPE html>

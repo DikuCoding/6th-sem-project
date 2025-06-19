@@ -1,0 +1,127 @@
+/* Reset some default styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.heading {
+   background-color: #f0f4f8;
+   padding: 2rem;
+   text-align: center;
+   border-bottom: 1px solid #ddd;
+}
+.heading h3 {
+   font-size: 2rem;
+   color: #2c3e50;
+}
+.heading p {
+   margin-top: 0.5rem;
+   color: #888;
+}
+.heading a {
+   color: #2e86de;
+   text-decoration: none;
+}
+
+/* Search Form */
+.search-form {
+   display: flex;
+   justify-content: center;
+   padding: 2rem;
+   background-color: #ffffff;
+   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.search-form form {
+   display: flex;
+   gap: 0.5rem;
+   width: 100%;
+   max-width: 500px;
+}
+.search-form .box {
+   flex-grow: 1;
+   padding: 0.8rem;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+.search-form .btn {
+   padding: 0.8rem 1.5rem;
+   background-color: #2e86de;
+   border: none;
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+.search-form .btn:hover {
+   background-color: #1b4f72;
+}
+
+/* Products */
+.products {
+   padding: 2rem;
+   background-color: #f8f9fa;
+}
+.products .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 2rem;
+}
+
+/* Individual Product Box */
+.products .box {
+   background-color: #ffffff;
+   padding: 1.5rem;
+   border-radius: 10px;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+   text-align: center;
+   transition: transform 0.2s ease;
+}
+.products .box:hover {
+   transform: translateY(-5px);
+}
+.products .box .image {
+   max-width: 100%;
+   max-height: 180px;
+   object-fit: contain;
+   margin-bottom: 1rem;
+}
+.products .box .name {
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: #2c3e50;
+   margin-bottom: 0.5rem;
+}
+.products .box .price {
+   font-size: 1.1rem;
+   color: #28a745;
+   margin-bottom: 1rem;
+}
+.products .box .qty {
+   width: 60px;
+   padding: 0.3rem;
+   text-align: center;
+   margin-bottom: 1rem;
+}
+.products .box .btn {
+   padding: 0.6rem 1.2rem;
+   background-color: #27ae60;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+.products .box .btn:hover {
+   background-color: #1e8449;
+}
+
+/* Message or Empty Notice */
+.empty {
+   text-align: center;
+   font-size: 1.2rem;
+   color: #999;
+   padding: 2rem;
+}
